@@ -1,0 +1,7 @@
+[project]
+name = "rag-service"
+version = "0.1.0"
+dependencies = ["fastapi","uvicorn","psycopg[binary]","pydantic","sqlalchemy","openai"]
+
+[tool.uvicorn]
+factory = true

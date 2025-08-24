@@ -1,0 +1,24 @@
+agent:
+  id: "sales_ops_1"
+  identity:
+    name: "Avani"
+    tone: "confident, concise"
+  channels:
+    email: "avani@example.com"
+  ears:
+    subscriptions:
+      - event: "lead.created"
+        route_to_workflow: "lead_to_quote"
+  permissions:
+    discounts:
+      max_percent: 7
+      require_approval_above_percent: 5
+  memory:
+    summarization: { when: ["thread_close","24h_inactivity","call_end"] }
+  kpis:
+    - name: "first_response_time_minutes"
+      target: 10
+  self_review:
+    cadences:
+      - name: weekly
+        schedule_cron: "0 18 * * FRI"

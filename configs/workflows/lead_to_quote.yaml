@@ -1,0 +1,24 @@
+workflow:
+  name: "lead_to_quote"
+  steps:
+    - id: enrich
+      kind: activity
+      name: "enrichLead"
+    - id: score
+      kind: activity
+      name: "scoreLead"
+    - id: price
+      kind: activity
+      name: "priceQuote"
+    - id: guard
+      kind: policy
+      action: "apply_discount"
+      input_from: "price"
+      on_violation: "pause_for_approval"
+    - id: send
+      kind: activity
+      name: "sendQuoteEmail"
+    - id: await_reply
+      kind: wait_event
+      event_types: ["email.reply","whatsapp.message"]
+      timeout: "P14D"

@@ -1,0 +1,22 @@
+# Dependencies
+/node_modules
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# IDE and editor files
+.idea/ # IntelliJ and WebStorm
+.vscode/ # Visual Studio Code
+*.iml
+*.iws
+*.swp
