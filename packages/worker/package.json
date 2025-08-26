@@ -1,14 +1,24 @@
 {
-  "name": "worker",
-  "version": "0.1.0",
+  "name": "ai-employee-worker",
+  "version": "1.0.0",
   "type": "module",
-  "scripts": { "dev": "tsx src/index.ts" },
-  "dependencies": {
-    "@temporalio/worker": "^1.9.3",
-    "@temporalio/client": "^1.9.3",
-    "dotenv": "^16.4.5",
-    "zod": "^3.23.8",
-    "axios": "^1.7.2"
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
   },
-  "devDependencies": { "tsx": "^4.7.0", "typescript": "^5.6.2" }
+  "dependencies": {
+    "@temporalio/activity": "^1.10.1",
+    "@temporalio/client": "^1.12.3",
+    "@temporalio/common": "^1.10.1",
+    "@temporalio/worker": "^1.12.3",
+    "@temporalio/workflow": "^1.10.1",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  }
 }

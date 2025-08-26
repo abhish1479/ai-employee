@@ -1,0 +1,24 @@
+{
+  "name": "ai-employee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.12.3",
+    "@temporalio/client": "^1.12.3",
+    "@temporalio/common": "^1.12.3",
+    "@temporalio/worker": "^1.12.3",
+    "@temporalio/workflow": "^1.12.3",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2"
+  }
+}

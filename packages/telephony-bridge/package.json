@@ -2,14 +2,16 @@
   "name": "telephony-bridge",
   "version": "0.1.0",
   "type": "module",
-  "scripts": { "dev": "tsx src/server.ts" },
+  "scripts": {
+    "dev": "tsx src/server.ts"
+  },
   "dependencies": {
-    "ws": "^8.18.0",
-    "express": "^4.19.2",
     "body-parser": "^1.20.2",
-    "dotenv": "^16.4.5",
-    "uuid": "^9.0.1",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
     "node-fetch": "^3.3.2",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.18.0"
   }
 }
